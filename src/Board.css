@@ -1,0 +1,67 @@
+.Board {
+  margin: 10% auto;
+}
+
+.Board-grid {
+  margin: auto;
+  box-shadow: 5px 5px 15px 5px #0ff, -5px -5px 15px 5px #f0f;
+}
+
+.Board-title {
+  font-size: 8em;
+  margin-bottom: 10px;
+}
+
+.Board-title span:nth-child(1) {
+  color: rgb(242, 158, 2);
+  animation: blinkOrange 1s infinite;
+}
+
+.Board-title span:nth-child(2) {
+  color: rgb(7, 227, 227);
+  animation: blinkCyan 3s infinite;
+}
+
+@keyframes blinkOrange {
+  0%,
+  15%,
+  22%,
+  25%,
+  53%,
+  57%,
+  100% {
+    text-shadow: 4px 7px 3px rgba(255, 255, 255, 0.68),
+      4px 7px 6px rgba(255, 255, 255, 0.673),
+      4px 7px 10px rgba(255, 255, 255, 0.701),
+      4px 7px 15px rgba(255, 255, 255, 0.673), 4px 7px 20px rgb(242, 158, 2),
+      4px 7px 26px rgb(242, 158, 2), 4px 7px 38px rgb(242, 158, 2);
+  }
+
+  20%,
+  24%,
+  55% {
+    text-shadow: none;
+  }
+}
+
+@keyframes blinkCyan {
+  0%,
+  18%,
+  22%,
+  25%,
+  53%,
+  57%,
+  100% {
+    text-shadow: 4px 7px 3px rgba(255, 255, 255, 0.68),
+      4px 7px 6px rgba(255, 255, 255, 0.673),
+      4px 7px 10px rgba(255, 255, 255, 0.701),
+      4px 7px 15px rgba(255, 255, 255, 0.673), 4px 7px 20px rgb(7, 227, 227),
+      4px 7px 26px rgb(7, 227, 227), 4px 7px 38px rgb(7, 227, 227);
+  }
+
+  20%,
+  24%,
+  55% {
+    text-shadow: none;
+  }
+}
