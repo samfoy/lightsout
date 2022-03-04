@@ -4,7 +4,21 @@
 
 .Board-grid {
   margin: auto;
+  border-radius: 10px;
   box-shadow: 5px 5px 15px 5px #0ff, -5px -5px 15px 5px #f0f;
+}
+
+.Board-grid tbody tr:first-child td:first-child {
+  border-top-left-radius: 10px;
+}
+.Board-grid tbody tr:first-child td:last-child {
+  border-top-right-radius: 10px;
+}
+.Board-grid tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 10px;
+}
+.Board-grid tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 10px;
 }
 
 .Board-title {
